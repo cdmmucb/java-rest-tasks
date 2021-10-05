@@ -1,0 +1,32 @@
+###
+GET http://localhost:8080/
+Accept: application/json
+
+### List all actors
+GET http://localhost:8080/actors
+Accept: application/json
+
+### Retrieve an actor by id
+GET http://localhost:8080/actors/201
+Accept: application/json
+
+### Create an actor
+POST http://localhost:8080/actors
+Content-Type: application/json
+
+{
+    "name": "nombre",
+    "last_name": "apellido"
+}
+
+### Update an actor
+PUT http://localhost:8080/actors/201
+Content-Type: application/json
+
+{
+    "name": "nombre actualizado",
+    "last_name": "apellido actualizado"
+}
+
+### Remove an actor (physical removal)
+DELETE  http://localhost:8080/actors/201
